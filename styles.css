@@ -1,0 +1,33 @@
+#chart, #the-canvas {
+	width: 1000px;
+	height: 800px;
+	position: relative;
+}
+
+#tooltip {
+	font-family: sans-serif;
+	position: absolute;
+	color: white;
+	background-color: #001f3f;
+	padding: .5rem;
+	border-radius: .3rem;
+}
+
+#tooltip .value {
+	font-size: 2rem;
+	font-weight: lighter;
+	margin-bottom: .2rem;
+	text-align: center;
+}
+
+#tooltip .subtext {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #7FDBFF;
+}
+
+#tooltip img {
+	display: block;
+	margin: .5rem auto;
+}
