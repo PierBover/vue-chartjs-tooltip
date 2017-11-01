@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style media="screen">
+			#yellow {
+				width: 10rem;
+				height: 10rem;
+				background-color: yellow;
+			}
+
+			#tooltip {
+				width: 2rem;
+				height: 1rem;
+				background-color: orangered;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="yellow"></div>
+		<div id="tooltip"></div>
+		<script type="text/javascript">
+			const elem = document.getElementById('yellow');
+			elem.addEventListener('mousemove',(event) => {
+				console.log(event);
+				const tooltip = document.getElementById('tooltip');
+				const style = "top:" + event.offsetY + "px; left:" + (event.offsetX + 20) + "px;";
+				tooltip.setAttribute('style', style);
+			})
+		</script>
+	</body>
+</html>
